@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 10px black;
+    background-color: white;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 0;
+    justify-self: start;
+    background-color: #019a;
+    box-shadow: 0 1px 5px black;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+}
+
+nav > h1{
+    text-align: center;
+    color: white;
+}
+
+form > h1 {
+      position: relative;
+      top:0px;
+      text-align: center;
+      align-items: start;
+}
+
+#btn{
+    width: 40%;
+    height: 50px;
+    border: none;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    background-color: blue;
+    opacity: 1;
+    color: white;
+}
+
+.btn{
+    margin-top: 40px;
+}
+
+#btn:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+label{
+    color: black;
+    margin: 0 auto 0 auto;
+}
+
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    border-radius: 12px;
+    height: 80px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 1px 20px black;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+#carro{
+    font-size: 15px;
+}
+
+#hr{
+    font-size: 20px;
+}
+
+main {
+    width: 100vw;
+    height: 30vh;
+    background-color: #019;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-plate{
+    width: 90vw;
+    height: 24vh;
+    background-color: #0000a5;
+    border-radius: 12px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-plate > p{
+    height: 25px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.car-plate > input{
+    width: 100%;
+    height: calc(24vh - 90px);
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.car-plate > input::placeholder{
+    color: white;
+}
+
+.car-plate > i{
+    color: white;
+    font-size: 55px;
+    margin-top: 5px;
+}
+
+.select > input{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+select{
+    outline: none;
+    justify-self: end;
+    width: 30vw;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+.container{
+    width: 100%;
+    height: calc(100vh - 60px - 25vh);
+}
+
+
+.detalhe{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: grey;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vagas{
+    text-align: center;
+}
+
+.vagas > p{
+    color: grey;
+}
+
+.vagas > #principal{
+    font-weight: 700;
+}
+
+#select{
+    margin-bottom: 0px;
+}
+
+.index{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: telainicial 5s;
+    animation-duration: 5s;
+    animation-name: telainicial;
+    animation-iteration-count: 1;
+}
+
+.logo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index > .logo > img{
+    width: 300px;
+    height: 300px;
+}
+
+.index > h1{
+    margin: auto 0 0 0;
+}
+
+@keyframes telainicial {
+    0% {
+        display: flex;
+    }
+    100% {
+        display: none;
+    }
+    
+}

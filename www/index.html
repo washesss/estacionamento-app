@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2e7d0c38c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="index">
+        <div class="logo">
+        <img src="img/logo.png" alt="Logo da Empresa Ficticia">
+        <h1>Seja Bem-Vindo</h1>
+        </div>
+        <h1 class="empress">Omaga</h1>
+    </div>
+    <header>
+        <nav>
+            <h1>Compra de Ticket</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="car-plate">
+            <i class="fa-solid fa-car-rear"></i>
+            <input type="text" id="placa" placeholder="AAA-1234" maxlength="8" onchange="myFunction()"
+                oninput="formatarInput(this)">
+            <p>Placa do Carro</p>
+        </div>
+    </main>
+    <div class="container">
+        <form>
+            <h1 id="resultado"></h1>
+            <div class="select">
+                <i class="fa-solid fa-car"></i>
+                <label>Modelo</label>
+                <select id="carro">
+                    <option value="Subcompacto">Subcompacto</option>
+                    <option value="Compacto">Compacto</option>
+                    <option value="Hatch">Hatch</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Pick-up">Pick-up</option>
+                </select>
+            </div>
+            <div class="select" id="select">
+                <i class="fa-solid fa-clock"></i>
+                <label>Hora(s)</label>
+                <select id="hr">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="vagas">
+                <p id="principal">Tempo de Vaga</p>
+                <p>Máx: 3 horas</p>
+            </div>
+            <button type="button" class="btn" id="btn" disabled onclick="calculo()">Enviar</button>
+            <div class="detalhe">
+                <button type="reset" id="btn">Realizar nova compra</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
